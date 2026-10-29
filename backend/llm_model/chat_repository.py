@@ -1,7 +1,6 @@
 from contextlib import closing
 
-from db import get_connection
-
+from llm_model.db import get_connection
 
 def create_session(session_id: str):
     with closing(get_connection()) as conn:

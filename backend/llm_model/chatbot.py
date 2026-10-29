@@ -5,7 +5,7 @@ from pathlib import Path
 from dotenv import load_dotenv
 from groq import Groq
 
-from intent_detection import detect_intent
+from llm_model.intent_detection import detect_intent
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 BACKEND_DIR = SCRIPT_DIR.parent

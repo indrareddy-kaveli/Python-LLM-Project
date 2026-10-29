@@ -5,9 +5,9 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
 
-from chatbot import generate_response
-from intent_detection import detect_intent
-from chat_repository import (
+from llm_model.chatbot import generate_response
+from llm_model.intent_detection import detect_intent
+from llm_model.chat_repository import (
     create_session,
     save_message,
     get_chat_history,
